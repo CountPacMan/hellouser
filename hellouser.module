@@ -2,7 +2,7 @@
 function hellouser_menu() {
     $items = array();
     $items['hello_user'] = array(
-        'title' => "Hello Friend!",
+        'title' => "User Added!",
         'page callback' => 'added_user',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
