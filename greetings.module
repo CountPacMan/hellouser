@@ -1,18 +1,18 @@
 <?php
 function greetings_menu() {
-    $items = [];
-    $items['hello_friend'] = [
+    $items = array();
+    $items['hello_friend'] = array(
         'title' => "Hello Friend!",
         'page callback' => 'say_hello',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
-    ];
-    $items['farewell'] = [
+    );
+    $items['farewell'] = array(
         'title' => 'Farewell Friend!',
         'page callback' => 'say_farewell',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
-    ];
+    );
     return $items;
 }
 
