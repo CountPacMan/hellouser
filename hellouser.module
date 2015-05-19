@@ -1,0 +1,19 @@
+<?php
+function hellouser_menu() {
+    $items = array();
+    $items['hello_user'] = array(
+        'title' => "Hello Friend!",
+        'page callback' => 'added_user',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function added_user() {
+    return '<p>You have added a new user. Yay!</p>';
+}
+
+function hellouser_user_insert() {
+    $_GET['destination'] = 'hello_user';
+}
